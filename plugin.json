@@ -1,0 +1,9 @@
+{
+  "name": "decky-totp",
+  "author": "NotNite",
+  "flags": ["debug"],
+  "publish": {
+    "tags": ["totp", "otp", "2fa", "auth"],
+    "description": "Show TOTP codes on your Steam Deck"
+  }
+}
