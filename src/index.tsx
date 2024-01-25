@@ -52,7 +52,7 @@ function Content({ serverAPI }: { serverAPI: ServerAPI }) {
 
   React.useEffect(() => {
     async function get() {
-      const resp = await serverAPI.callPluginMethod<{}, string[]>(
+      const resp = await serverAPI.callPluginMethod<{}, Record<string, string>>(
         "entries",
         {}
       );
