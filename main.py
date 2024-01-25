@@ -1,5 +1,6 @@
 import os
 import sys
+
 PLUGIN_DIR = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(PLUGIN_DIR + "/py_modules")
 
@@ -9,6 +10,7 @@ from settings import SettingsManager
 settings_dir = os.environ["DECKY_PLUGIN_SETTINGS_DIR"]
 settings = SettingsManager(name="settings", settings_directory=settings_dir)
 settings.read()
+
 
 class Plugin:
     async def entries(self):

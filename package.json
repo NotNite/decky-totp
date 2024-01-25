@@ -4,8 +4,7 @@
   "description": "Show TOTP codes on your Steam Deck",
   "scripts": {
     "prepare": "pip3 install -r requirements.txt -t py_modules",
-    "build": "shx rm -rf dist && rollup -c",
-    "watch": "rollup -c -w"
+    "build": "rollup -c"
   },
   "keywords": [
     "decky",
@@ -28,7 +27,6 @@
     "@types/webpack": "^5.28.0",
     "rollup": "^2.77.1",
     "rollup-plugin-import-assets": "^1.1.1",
-    "shx": "^0.3.4",
     "tslib": "^2.4.0",
     "typescript": "^4.7.4"
   },
