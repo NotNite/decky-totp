@@ -5,7 +5,7 @@ Show TOTP codes on your Steam Deck.
 ## Building
 
 ```shell
-./scripts/setup.sh
+pnpm i
 ./scripts/build.sh && ./scripts/deploy.sh <deck IP>
 ```
 
